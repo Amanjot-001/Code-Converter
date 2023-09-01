@@ -55,7 +55,6 @@ app.post('/', async (req,res) => {
          }]
     })
 
-    // console.log(completion.data.choices[0].message.content)
     const finalResponse = await openai.createChatCompletion({
         model: 'gpt-3.5-turbo',
         messages: [{
@@ -79,7 +78,6 @@ app.post('/', async (req,res) => {
     }
   }
  else{
-    // console.log("i am in no")
     res.json({
         completion: {content: 'Not a valid code'}
     })
