@@ -55,7 +55,7 @@ function showBlurText() {
 
 
 function fetchData(){
-    fetch('https://code-converter-i3v4.onrender.com', {
+    fetch('https://code-converter-irhf.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
